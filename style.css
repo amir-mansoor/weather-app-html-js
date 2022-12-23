@@ -1,0 +1,138 @@
+:root {
+  --yellow-color:rgb(252, 213, 53);
+}
+
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(24, 26, 32);
+  color: white;
+}
+
+.header {
+  border-bottom: 1px solid var(--yellow-color);
+  padding:15px 10px 15px 10px;
+  width: 100vw;
+}
+
+.container {
+  width: 90vw;
+  margin:0 auto;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: var(--yellow-color);
+}
+
+form input {
+  background: transparent;
+  color: white;
+  border: 1px solid gray;
+  outline:none;
+  padding:5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+form button {
+  background: transparent;
+  color: white;
+  border: 1px solid gray;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input:hover {
+  border: 1px solid var(--yellow-color);
+}
+
+form input:focus {
+  border: 1px solid var(--yellow-color);
+}
+
+form button:hover {
+  border: 1px solid var(--yellow-color);
+}
+
+.main-section .container {
+  margin-top: 20px
+}
+
+.main-section .container h2 {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cards .card {
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cards .card .card-header {
+  border-bottom: 1px solid gray;
+  padding:15px 10px 15px 10px;
+  background-color: rgba(24, 26, 32,0.2);
+}
+
+.cards .card .card-body {
+  padding: 15px 10px 15px 10px;
+}
+
+.cards .card .card-body ul li {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.table-section {
+  margin-top: 15px;
+}
+
+table {
+  border: 1px solid gray;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+
+thead {
+  border-bottom: 1px solid gray;
+}
+
+tr {
+  border:1px solid gray;
+  text-align: center;
+  cursor: pointer;
+}
+
+th {
+  padding: 15px 5px 15px 2px;
+  color: var(--yellow-color);
+  border:1px solid gray;
+}
+
+td {
+  border:1px solid gray;
+  padding:10px;
+}
+
+tr:nth-child(odd):hover {
+  background-color: rgba(166, 150, 150, 0.17);
+}

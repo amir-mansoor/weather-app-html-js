@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h2>Mansoor Weather Forecast</h2>
+        <form>
+          <input id="searchValue" type="text" placeholder="Search City">
+          <button type="submit" id="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="main-section">
+      <div class="container">
+          <h2>Weather for <span id="city_head"></span></h2>
+          <div class="cards">
+            <div class="card">
+              <div class="card-header">
+                <h3>Temperatures</h3>
+              </div>
+              <div class="card-body">
+                <h3 class="temperate-rate"><span id="temp"></span></h3>
+                <ul>
+                  <li>Temperature is <span id="temp"></span></li>
+                  <li>Min Temperature is <span id="min_temp"></span></li>
+                  <li>Max Temperature is <span id="max_temp"></span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3>Humidity Info</h3>
+              </div>
+              <div class="card-body">
+                <h3 id="humidity" class="temperate"></h3>
+                <ul>
+                  <li>Wind Degree is <span id="wind_degree"></span></li>
+                  <li>Feels Like <span id="feels_like"></span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h3>Wind Info</h3>
+              </div>
+              <div class="card-body">
+                <h3 class="temperate-rate"><span id="wind_speed"></span> km/h</h3>
+                <ul>
+                  <li>Sunrise time is <span id="sunrise"></span></li>
+                  <li>Sunset time is <span id="sunset"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="table-section">
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Cloud Pct</th>
+              <th>Feels Like</th>
+              <th>Humidity</th>
+              <th>Max Temp</th>
+              <th>Min Temp</th>
+              <th>Sunrise</th>
+              <th>Sunset</th>
+              <th>Temp</th>
+              <th>Wind Degrees</th>
+              <th>Wind Speed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shangai</td>
+              <td>1</td>
+              <td>3</td>
+              <td>6</td>
+              <td>3</td>
+              <td>1</td>
+              <td>5</td>
+              <td>12</td>
+              <td>12</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Boston</td>
+              <td>1</td>
+              <td>3</td>
+              <td>6</td>
+              <td>12</td>
+              <td>3</td>
+              <td>1</td>
+              <td>5</td>
+              <td>12</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Lucknow</td>
+              <td>1</td>
+              <td>3</td>
+              <td>6</td>
+              <td>3</td>
+              <td>1</td>
+              <td>5</td>
+              <td>12</td>
+              <td>12</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>Kolkata</td>
+              <td>1</td>
+              <td>3</td>
+              <td>6</td>
+              <td>3</td>
+              <td>1</td>
+              <td>5</td>
+              <td>12</td>
+              <td>4</td>
+              <td>12</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
